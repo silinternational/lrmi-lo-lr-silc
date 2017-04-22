@@ -1,99 +1,124 @@
-# Standard Readme
+# Learning Metadata For SIL
+Learning Resource Metadata, Learning Objectives, Learning Resources, and SIL Courses, Learning Event descriptions. _(lrmi-lo-lr-silc)_
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![banner](img/Cyg.png)
+By [Spiritia - Own work CC0](https://commons.wikimedia.org/w/index.php?curid=47312095).
 
-> Readme Standard Style
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-Your README file is normally the first entry point to your code. It should tell people why they should use your module, how they can install it, and how they can use it. Standardizing how you write your README makes creating and maintaining your READMEs easier. Great documentation takes work!
+### Short Description
+> Proving ground for data and description standards development for Learning Resource Metadata, Learning Objectives, Learning Resources, SIL Courses, Learning Event descriptions.
 
-This repository contains:
+### Long Description
+We are developing a set of tools for managing the various public standards we are creating. This is is where we share code and data sets.
 
-1. [The specification](spec.md) for how a standard README should look.
-2. A link to a linter you can use to keep your README maintained ([work in progress](https://github.com/RichardLitt/standard-readme/issues/5)).
-3. A link to [a generator](https://github.com/RichardLitt/generator-standard-readme) you can use to create standard READMEs.
-4. [A badge](#badge) to point to this spec.
-5. [Examples of standard READMEs](example-readmes/) - such as this file you are reading.
+We have several projects currently in this repo:
+1. Our implementation of LRMI with our custom taxonomies.
+2. Our custom taxonomies:
+  * GOLD based Linguistics taxonomy Expressed as XML and JSON
+  * SIL Course listing expressed as JSON and XML
+  * SIL Competencies expressed as JSON and XML
+
+The expressed format is to enable tools like RAMP and CornerStone on Demand to import our competencies.
 
 
-## Table of Contents
+### Table of Contents
+  - [Background](#background)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Extra Sections](#extra-sections)
+  - [API](#api)
+  - [Contribute](#contribute)
+  - [License](#license)
 
-- [Background](#background)
-- [Install](#install)
-- [Usage](#usage)
-  - [Generator](#generator)
-  - [Badge](#badge)
-  - [Example Readmes](#example-readmes)
-- [Contribute](#contribute)
-- [License](#license)
+### Background
+**Status:** Optional.
 
-## Background
+**Requirements:**
+- Cover motivation.
+- Cover abstract dependencies.
+- Cover intellectual provenance: A `See Also` section is also fitting.
 
-Standard Readme started with the issue originally posed by [@maxogden](https://github.com/maxogden) over at [feross/standard](https://github.com/feross/standard) in [this issue](https://github.com/feross/standard/issues/141), about whether or not a tool to standardize readmes would be useful. A lot of that discussion ended up in [zcei's standard-readme](https://github.com/zcei/standard-readme/issues/1) repository. While working on maintaining the [IPFS](https://github.com/ipfs) repositories, I needed a way to standardize Readmes across that organization. This specification started as a result of that.
+### Install
+**Status:** Required by default, optional for doc modules.
 
-> Your documentation is complete when someone can use your module without ever
-having to look at its code. This is very important. This makes it possible for
-you to separate your module's documented interface from its internal
-implementation (guts). This is good because it means that you are free to
-change the module's internals as long as the interface remains the same.
+**Requirements:**
+- Code block illustrating how to install.
 
-> Remember: the documentation, not the code, defines what a module does.
+**Subsections:**
+- `Dependencies`. Required if there are unusual dependencies or dependencies that must be manually installed.
+- `Updating`. Optional.
 
-~ [Ken Williams, Perl Hackers](http://mathforum.org/ken/perl_modules.html#document)
+**Suggestions:**
+- Link to prerequisite sites for programming language: [npmjs](https://npmjs.com), [godocs](https://godoc.org), etc.
+- Include any system-specific information needed for installation.
+- If there is no code in the module - for instance, a document-based module - this section is not required.
 
-Writing READMEs is way too hard, and keeping them maintained is difficult. By offloading this process - making writing easier, making editing easier, making it clear whether or not an edit is up to spec or not - you can spend less time worry about whether or not your initial documentation is good, and spend more time writing and using code.
+### Usage
+**Status:** Required by default, optional for doc modules.
 
-As well, standardizing can help elsewhere. By having a standard, users can spend less time searching for the information they want. They can also build tools to gather search terms from descriptions, to automatically run example code, to check licensing, and so on.
+**Requirements:**
+- Code block illustrating common usage.
+- If CLI compatible, code block indicating common usage.
+- If importable, code block indicating both import functionality and usage.
 
-The goals for this repository are:
+**Subsections:**
+- `CLI`. Required if CLI functionality exists.
 
-1. A well defined **specification**. This can be found in the [Spec document](spec.md). It is a constant work in progress; please open issues to discuss changes.
-2. **An example README**. This Readme is fully standard-readme compliant, and there are more examples in the `example-readmes` folder.
-3. A **linter** that can be used to look at errors in a given Readme. Please refer to the [tracking issue](https://github.com/RichardLitt/standard-readme/issues/5).
-4. A **generator** that can be used to quickly scaffold out new READMEs. See [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme).
-5. A **compliant badge** for users. See [the badge](#badge).
+**Suggestions:**
+- Cover basic choices that may affect usage: for instance, if JavaScript, cover promises/callbacks, ES6 here.
+- If relevant, point to a runnable file for the usage code.
+- If there is no code in the module - for instance, a document-based module - this section is not required.
 
-## Install
+### Extra Sections
+**Status**: Optional.
 
-This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
+**Requirements:**
+- None.
 
-```sh
-$ npm i standard-readme
-```
+**Suggestions:**
+- Does not require its own title, however the sections included within it must have titles.
+- This should contain any other sections that are relevant, placed after [Usage](#usage) and before [API](#api).
+- Specifically, the [Security](#security) section should be here if it wasn't important enough to be placed above.
 
-## Usage
+### API
+**Status:** Optional.
 
-Currently, this is mainly a documentation package. You will get the most benefit by reading [spec.md](spec.md).
+**Requirements:**
+- Describe exported functions and objects.
 
-### Generator
+**Suggestions:**
+- Describe signatures, return types, callbacks, and events.
+- Cover types covered where not obvious.
+- Describe caveats.
+- If using an external API generator (like go-doc, js-doc, or so on), point to an external `API.md` file. This can be the only item in the section, if present.
 
-To use the generator, look at [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme). There is a global executable to run the generator in that package, aliased as `standard-readme`.
+### Maintainer(s)
+[@HughP](https://github.com/HughP)
 
-### Badge
 
-If your README is compliant with Standard-Readme and you're on GitHub, it would be great if you could add the badge. This allows people to link back to this Spec, and helps adoption of the README. The badge is **not required**.
+### Contribute
+**Status**: Required.
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+**Requirements:**
+- State where users can ask questions.
+- State whether PRs are accepted.
+- List any requirements for contributing; for instance, having a sign-off on commits.
 
-To add in Markdown format, use this code:
+**Suggestions:**
+- Link to a contributing or contribute file -- if there is one.
+- Be as friendly as possible.
+- Link to the GitHub issues.
+- Link to Code of Conduct. This is often in Contribute, or organization wide, so may not be necessary for each module.
+- A subsection for listing contributors is also welcome here.
 
-```
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-```
+### License
+**Status:** Required. (Exact License still pending)
 
-### Example Readmes
+**Requirements:**
+- State license initials or name.
+- State license owner.
+- Must be last section.
 
-To see how the specification has been applied, see the [example-readmes](example-readmes/).
-
-## Maintainers
-
-[@RichardLitt](https://github.com/RichardLitt).
-
-## Contribute
-
-Feel free to dive in! [Open an issue](https://github.com/RichardLitt/standard-readme/issues/new) or submit PRs.
-
-Standard Readme follows the [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) Code of Conduct.
-
-## License
-
-[MIT](LICENSE) © Richard Littauer
+**Suggestions:**
+- Link to longer License file in local repository.
