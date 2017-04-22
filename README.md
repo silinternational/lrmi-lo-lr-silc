@@ -1,8 +1,9 @@
 # Learning Metadata For SIL
 Learning Resource Metadata, Learning Objectives, Learning Resources, and SIL Courses, Learning Event descriptions. _(lrmi-lo-lr-silc)_
 
-![banner](img/Cyg.png)
-By [Spiritia - Own work CC0](https://commons.wikimedia.org/w/index.php?curid=47312095).
+![banner](https://github.com/silinternational/lrmi-lo-lr-silc/blob/master/img/Cgy.png)
+
+_Image by [Spiritia - Own work CC0](https://commons.wikimedia.org/w/index.php?curid=47312095)._
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
